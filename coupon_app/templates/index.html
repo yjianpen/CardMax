@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Card Benefits Calculator</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Card Benefits Calculator</h1>
+    <p class="subtitle">Find your best credit card for any purchase — no sensitive data stored</p>
+  </header>
+
+  <main>
+    <!-- ── Calculate Section ───────────────────────────────── -->
+    <section id="calc-section" class="card-section">
+      <h2>Calculate Best Card</h2>
+      <form id="calc-form">
+        <div class="form-row">
+          <label for="amount">Purchase Amount ($)</label>
+          <input type="number" id="amount" min="0.01" step="0.01" placeholder="e.g. 85.00" required />
+        </div>
+        <div class="form-row">
+          <label for="category">Category</label>
+          <select id="category">
+            {% for cat in categories %}
+            <option value="{{ cat }}">{{ cat.capitalize() }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="merchant">Merchant (optional)</label>
+          <input type="text" id="merchant" placeholder="e.g. Whole Foods" />
+        </div>
+        <button type="submit" class="btn btn-primary">Find Best Card</button>
+      </form>
+
+      <div id="results" class="results hidden"></div>
+    </section>
+
+    <!-- ── My Cards Section ────────────────────────────────── -->
+    <section id="cards-section" class="card-section">
+      <div class="section-header">
+        <h2>My Cards</h2>
+        <button class="btn btn-secondary" id="add-card-btn">+ Add Card</button>
+      </div>
+
+      <div id="cards-list" class="cards-grid">
+        <p class="empty-state">No cards yet. Add one above or import from the library.</p>
+      </div>
+    </section>
+
+    <!-- ── Card Library Section ────────────────────────────── -->
+    <section id="library-section" class="card-section">
+      <h2>Card Library</h2>
+      <p class="section-desc">Select a popular card to add it to your wallet. Reward rates are publicly known values — you can adjust them after importing.</p>
+      <div id="library-list" class="library-grid"></div>
+    </section>
+  </main>
+
+  <!-- ── Add / Edit Card Modal ──────────────────────────────── -->
+  <div id="card-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-overlay" id="modal-overlay"></div>
+    <div class="modal-content">
+      <h3 id="modal-title">Add Card</h3>
+
+      <div class="privacy-note">
+        <strong>Privacy:</strong> Only nickname, optional last 4 digits, and reward rates are stored.
+        Card numbers, CVV, and expiration dates are <strong>never</strong> entered here.
+      </div>
+
+      <form id="card-form">
+        <input type="hidden" id="edit-id" />
+
+        <div class="form-row">
+          <label for="card-nickname">Nickname <span class="required">*</span></label>
+          <input type="text" id="card-nickname" placeholder="e.g. My Travel Card" required />
+        </div>
+        <div class="form-row">
+          <label for="card-name">Card Name</label>
+          <input type="text" id="card-name" placeholder="e.g. Chase Sapphire Preferred" />
+        </div>
+        <div class="form-row">
+          <label for="card-last-four">Last 4 Digits (optional, for your reference only)</label>
+          <input type="text" id="card-last-four" maxlength="4" pattern="\d{4}" placeholder="1234" />
+        </div>
+        <div class="form-row">
+          <label for="card-annual-fee">Annual Fee ($)</label>
+          <input type="number" id="card-annual-fee" min="0" step="0.01" placeholder="0" value="0" />
+        </div>
+
+        <h4>Cashback / Reward Rates (%)</h4>
+        <p class="field-hint">Enter effective cashback percentage per category. For points cards, multiply points earned × cents-per-point ÷ 100 (e.g. 3× points at 1.25¢/pt = 3.75%).</p>
+        <div class="rewards-grid" id="rewards-grid"></div>
+
+        <div class="form-row">
+          <label for="card-notes">Notes</label>
+          <textarea id="card-notes" placeholder="e.g. caps, credits, special merchants"></textarea>
+        </div>
+
+        <div class="modal-actions">
+          <button type="button" class="btn btn-ghost" id="modal-cancel">Cancel</button>
+          <button type="submit" class="btn btn-primary" id="modal-save">Save Card</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    // Inject categories from Flask template for use in JS
+    window.CATEGORIES = {{ categories | tojson }};
+  </script>
+  <script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "example-1111-2222-3333-444444444444",
+    "nickname": "My Travel Card",
+    "card_name": "Chase Sapphire Preferred",
+    "last_four": "1234",
+    "rewards": {
+      "dining": 3.75,
+      "grocery": 1.25,
+      "gas": 1.25,
+      "travel": 2.5,
+      "online": 1.25,
+      "entertainment": 1.25,
+      "pharmacy": 1.25,
+      "streaming": 3.75,
+      "transit": 2.5,
+      "wholesale": 1.25,
+      "other": 1.25
+    },
+    "annual_fee": 95,
+    "notes": "3x dining & streaming, 2x travel @ 1.25cpp"
+  },
+  {
+    "id": "example-aaaa-bbbb-cccc-dddddddddddd",
+    "nickname": "Daily Driver",
+    "card_name": "Citi Double Cash Card",
+    "last_four": "5678",
+    "rewards": {
+      "dining": 2.0,
+      "grocery": 2.0,
+      "gas": 2.0,
+      "travel": 2.0,
+      "online": 2.0,
+      "entertainment": 2.0,
+      "pharmacy": 2.0,
+      "streaming": 2.0,
+      "transit": 2.0,
+      "wholesale": 2.0,
+      "other": 2.0
+    },
+    "annual_fee": 0,
+    "notes": "2% everywhere"
+  }
+]

@@ -1,0 +1,344 @@
+[
+  {
+    "id": "chase_sapphire_preferred",
+    "name": "Chase Sapphire Preferred",
+    "annual_fee": 95,
+    "rewards": {
+      "dining": 3.75,
+      "grocery": 1.25,
+      "gas": 1.25,
+      "travel": 2.5,
+      "online": 1.25,
+      "entertainment": 1.25,
+      "pharmacy": 1.25,
+      "streaming": 3.75,
+      "transit": 2.5,
+      "wholesale": 1.25,
+      "other": 1.25
+    },
+    "notes": "3x dining & streaming, 2x travel & transit, 1x other @ ~1.25cpp"
+  },
+  {
+    "id": "chase_sapphire_reserve",
+    "name": "Chase Sapphire Reserve",
+    "annual_fee": 550,
+    "rewards": {
+      "dining": 4.5,
+      "grocery": 1.5,
+      "gas": 1.5,
+      "travel": 4.5,
+      "online": 1.5,
+      "entertainment": 1.5,
+      "pharmacy": 1.5,
+      "streaming": 1.5,
+      "transit": 4.5,
+      "wholesale": 1.5,
+      "other": 1.5
+    },
+    "notes": "3x dining & travel (1.5cpp). $300 travel credit offsets fee."
+  },
+  {
+    "id": "chase_freedom_unlimited",
+    "name": "Chase Freedom Unlimited",
+    "annual_fee": 0,
+    "rewards": {
+      "dining": 3.0,
+      "grocery": 1.5,
+      "gas": 1.5,
+      "travel": 5.0,
+      "online": 1.5,
+      "entertainment": 1.5,
+      "pharmacy": 3.0,
+      "streaming": 1.5,
+      "transit": 1.5,
+      "wholesale": 1.5,
+      "other": 1.5
+    },
+    "notes": "1.5% everywhere, 3% dining & pharmacy, 5% Chase Travel"
+  },
+  {
+    "id": "chase_freedom_flex",
+    "name": "Chase Freedom Flex",
+    "annual_fee": 0,
+    "rewards": {
+      "dining": 3.0,
+      "grocery": 1.0,
+      "gas": 1.0,
+      "travel": 5.0,
+      "online": 1.0,
+      "entertainment": 1.0,
+      "pharmacy": 3.0,
+      "streaming": 1.0,
+      "transit": 1.0,
+      "wholesale": 1.0,
+      "other": 1.0
+    },
+    "notes": "5% rotating quarterly categories (update manually), 3% dining & pharmacy"
+  },
+  {
+    "id": "amex_gold",
+    "name": "American Express Gold Card",
+    "annual_fee": 250,
+    "rewards": {
+      "dining": 4.0,
+      "grocery": 4.0,
+      "gas": 1.0,
+      "travel": 3.0,
+      "online": 1.0,
+      "entertainment": 1.0,
+      "pharmacy": 1.0,
+      "streaming": 1.0,
+      "transit": 1.0,
+      "wholesale": 1.0,
+      "other": 1.0
+    },
+    "notes": "4x dining & US grocery (cap $25k/yr), 3x flights @ ~1cpp. $120 dining + $120 Uber credits."
+  },
+  {
+    "id": "amex_platinum",
+    "name": "American Express Platinum",
+    "annual_fee": 695,
+    "rewards": {
+      "dining": 1.0,
+      "grocery": 1.0,
+      "gas": 1.0,
+      "travel": 5.0,
+      "online": 1.0,
+      "entertainment": 1.0,
+      "pharmacy": 1.0,
+      "streaming": 1.0,
+      "transit": 1.0,
+      "wholesale": 1.0,
+      "other": 1.0
+    },
+    "notes": "5x flights & prepaid hotels through Amex Travel @ ~1cpp. Best for frequent travelers."
+  },
+  {
+    "id": "citi_double_cash",
+    "name": "Citi Double Cash Card",
+    "annual_fee": 0,
+    "rewards": {
+      "dining": 2.0,
+      "grocery": 2.0,
+      "gas": 2.0,
+      "travel": 2.0,
+      "online": 2.0,
+      "entertainment": 2.0,
+      "pharmacy": 2.0,
+      "streaming": 2.0,
+      "transit": 2.0,
+      "wholesale": 2.0,
+      "other": 2.0
+    },
+    "notes": "2% cash back everywhere (1% purchase + 1% payment). No categories to track."
+  },
+  {
+    "id": "citi_custom_cash",
+    "name": "Citi Custom Cash Card",
+    "annual_fee": 0,
+    "rewards": {
+      "dining": 5.0,
+      "grocery": 5.0,
+      "gas": 5.0,
+      "travel": 5.0,
+      "online": 5.0,
+      "entertainment": 5.0,
+      "pharmacy": 5.0,
+      "streaming": 5.0,
+      "transit": 5.0,
+      "wholesale": 5.0,
+      "other": 1.0
+    },
+    "notes": "5% on top eligible spend category each billing cycle (up to $500/mo), 1% on all other"
+  },
+  {
+    "id": "discover_it",
+    "name": "Discover it Cash Back",
+    "annual_fee": 0,
+    "rewards": {
+      "dining": 1.0,
+      "grocery": 1.0,
+      "gas": 1.0,
+      "travel": 1.0,
+      "online": 1.0,
+      "entertainment": 1.0,
+      "pharmacy": 1.0,
+      "streaming": 1.0,
+      "transit": 1.0,
+      "wholesale": 1.0,
+      "other": 1.0
+    },
+    "notes": "5% rotating quarterly categories (update manually per quarter), 1% everywhere else"
+  },
+  {
+    "id": "capital_one_venture_x",
+    "name": "Capital One Venture X",
+    "annual_fee": 395,
+    "rewards": {
+      "dining": 2.0,
+      "grocery": 2.0,
+      "gas": 2.0,
+      "travel": 5.0,
+      "online": 2.0,
+      "entertainment": 2.0,
+      "pharmacy": 2.0,
+      "streaming": 2.0,
+      "transit": 2.0,
+      "wholesale": 2.0,
+      "other": 2.0
+    },
+    "notes": "10x hotels/car rentals, 5x flights through Capital One Travel, 2x everywhere @ 1cpp"
+  },
+  {
+    "id": "capital_one_savor_one",
+    "name": "Capital One SavorOne",
+    "annual_fee": 0,
+    "rewards": {
+      "dining": 3.0,
+      "grocery": 3.0,
+      "gas": 1.0,
+      "travel": 5.0,
+      "online": 3.0,
+      "entertainment": 3.0,
+      "pharmacy": 1.0,
+      "streaming": 3.0,
+      "transit": 1.0,
+      "wholesale": 1.0,
+      "other": 1.0
+    },
+    "notes": "3% dining, grocery, entertainment, streaming; 5% Capital One Travel; 1% other"
+  },
+  {
+    "id": "apple_card",
+    "name": "Apple Card",
+    "annual_fee": 0,
+    "rewards": {
+      "dining": 2.0,
+      "grocery": 2.0,
+      "gas": 2.0,
+      "travel": 2.0,
+      "online": 3.0,
+      "entertainment": 3.0,
+      "pharmacy": 2.0,
+      "streaming": 3.0,
+      "transit": 2.0,
+      "wholesale": 2.0,
+      "other": 1.0
+    },
+    "notes": "3% Apple purchases & select merchants, 2% Apple Pay, 1% physical card"
+  },
+  {
+    "id": "amazon_prime_visa",
+    "name": "Amazon Prime Visa",
+    "annual_fee": 0,
+    "rewards": {
+      "dining": 2.0,
+      "grocery": 5.0,
+      "gas": 2.0,
+      "travel": 2.0,
+      "online": 5.0,
+      "entertainment": 1.0,
+      "pharmacy": 2.0,
+      "streaming": 1.0,
+      "transit": 1.0,
+      "wholesale": 1.0,
+      "other": 1.0
+    },
+    "notes": "5% Amazon & Whole Foods, 2% dining/gas/pharmacy, 1% other. Requires Prime."
+  },
+  {
+    "id": "blue_cash_preferred",
+    "name": "Amex Blue Cash Preferred",
+    "annual_fee": 95,
+    "rewards": {
+      "dining": 1.0,
+      "grocery": 6.0,
+      "gas": 3.0,
+      "travel": 1.0,
+      "online": 1.0,
+      "entertainment": 1.0,
+      "pharmacy": 1.0,
+      "streaming": 6.0,
+      "transit": 3.0,
+      "wholesale": 1.0,
+      "other": 1.0
+    },
+    "notes": "6% US supermarkets (up to $6k/yr) & streaming, 3% gas & transit, 1% other"
+  },
+  {
+    "id": "blue_cash_everyday",
+    "name": "Amex Blue Cash Everyday",
+    "annual_fee": 0,
+    "rewards": {
+      "dining": 1.0,
+      "grocery": 3.0,
+      "gas": 2.0,
+      "travel": 1.0,
+      "online": 3.0,
+      "entertainment": 1.0,
+      "pharmacy": 1.0,
+      "streaming": 1.0,
+      "transit": 1.0,
+      "wholesale": 1.0,
+      "other": 1.0
+    },
+    "notes": "3% US supermarkets (up to $6k/yr) & US online, 2% gas, 1% other"
+  },
+  {
+    "id": "wells_fargo_active_cash",
+    "name": "Wells Fargo Active Cash",
+    "annual_fee": 0,
+    "rewards": {
+      "dining": 2.0,
+      "grocery": 2.0,
+      "gas": 2.0,
+      "travel": 2.0,
+      "online": 2.0,
+      "entertainment": 2.0,
+      "pharmacy": 2.0,
+      "streaming": 2.0,
+      "transit": 2.0,
+      "wholesale": 2.0,
+      "other": 2.0
+    },
+    "notes": "Unlimited 2% cash rewards on all purchases"
+  },
+  {
+    "id": "boa_premium_rewards",
+    "name": "Bank of America Premium Rewards",
+    "annual_fee": 95,
+    "rewards": {
+      "dining": 2.0,
+      "grocery": 2.0,
+      "gas": 1.5,
+      "travel": 2.0,
+      "online": 1.5,
+      "entertainment": 1.5,
+      "pharmacy": 1.5,
+      "streaming": 1.5,
+      "transit": 1.5,
+      "wholesale": 1.5,
+      "other": 1.5
+    },
+    "notes": "2x travel & dining, 1.5x other. Better with Preferred Rewards status."
+  },
+  {
+    "id": "costco_anywhere_visa",
+    "name": "Costco Anywhere Visa",
+    "annual_fee": 0,
+    "rewards": {
+      "dining": 3.0,
+      "grocery": 2.0,
+      "gas": 4.0,
+      "travel": 3.0,
+      "online": 2.0,
+      "entertainment": 3.0,
+      "pharmacy": 2.0,
+      "streaming": 2.0,
+      "transit": 2.0,
+      "wholesale": 2.0,
+      "other": 1.0
+    },
+    "notes": "4% gas (up to $7k/yr), 3% restaurants & travel, 2% Costco, 1% other. Requires Costco membership."
+  }
+]
