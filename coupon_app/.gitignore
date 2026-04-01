@@ -1,0 +1,14 @@
+# User card data — never commit personal card information
+data/cards.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+
+# Flask session secret (if added later)
+.env
+instance/
